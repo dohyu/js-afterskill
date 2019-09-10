@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My trip advisor</title>
+
+    <link rel="stylesheet" href="libs/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <script src="libs/jquery-3.4.1.min.js"></script>
+    <script src="libs/jquery-ui/jquery-ui.min.js"></script>
+    <script src="scripts/register.js"></script>
+</head>
+<body class="gray-bg">
+    <div id="container">
+        <div id="header" class="inverted">
+            <div>
+                <a href="index.html"><span></span></a>
+                <div class="menu-items right">
+                    <a href="register.html">회원가입</a>
+                    <img src="images/line_maintop_gray.png">
+                    <a href="javascript:showLogin()">로그인</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="body">
+            <div class="form-box md-box">
+                <div class="inner">
+                    <div class="title">
+                        <span class="blue">마이트립</span> <span class="black">어드바이저</span>
+                    </div>
+                    <span class="sub-title">필수 정보를 입력하세요</span>
+                    <form id="form-register">
+                        <input type="email" id="inp-email" name="email" placeholder="이메일 주소" autofocus />
+                        <div class="txt-warning"></div>
+
+                        <input type="password" id="inp-password" name="password" placeholder="비밀번호" />
+                        <div class="txt-waring"></div>
+
+                        <input type="password" id="inp-confirm" name="confirm" placeholder="비밀번호 확인" />
+                        <div class="txt-waring"></div>
+
+                        <div class="div-gender">
+                            <input type="radio" id="inp-male" name="gender" value="m"> <label for="inp-male">남</label>
+                            <input type="radio" id="inp-female" name="gender" value="f"> <label for="inp-female">여</label>
+                            <span class="txt-warning right"></span>
+                        </div>
+
+                        <div class="div-birth">
+                            <select name="" id="sel-birth">
+                                <option value="">출생년도 선택</option>
+                            </select>
+                            <span class="txt-warning right"></span>
+                        </div>
+
+                        <div class="div-accept">
+                            <input type="checkbox" id="inp-accept" />
+                            <label for="inp-accept">회원가입을 위한 개인정보 제공에 동의합니다.</label>
+                            <span class="txt-warning right"></span>
+                        </div>
+                        
+                        <button id="btn-submit" type="submit">가입하기</button>
+                        <button id="btn-back" type="button">돌아가기</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

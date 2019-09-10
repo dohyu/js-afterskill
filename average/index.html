@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>평균값 계산기</title>
+
+    <script>
+        /*
+        // 전체 숫자의 개수
+        var totalNumbers = Number(prompt('개수를 입력해주세요.'));
+
+        // 총합
+        var sum = 0;
+        
+        // i가 1부터 totalNumbers가 될때까지 반복
+        for (var i = 1; i <= totalNumbers; i++) {
+            var value = prompt(i + '번째 숫자를 입력해주세요.');
+            sum += Number(value);
+        }
+
+        // 평균값 구하기
+        var avg = sum / totalNumbers;
+        alert('평균값: ' + avg);
+        */
+
+        // 전체 숫자의 개수
+        var totalNumbers = Number(prompt('개수를 입력해주세요.'));
+
+        // 총합
+        var sum = 0;
+
+        // 반복을 위한 변수
+        var i = 1;
+
+        // i가 totalNumbers 보다 작거나 같을 경우 반복
+        while (i <= totalNumbers) {
+            var value = prompt(i + '번째 숫자를 입력해주세요.');
+            sum += Number(value);
+            i++;
+        }
+
+        // 평균값 구하기
+        var avg = sum / totalNumbers;
+        alert('평균값: ' + avg);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
